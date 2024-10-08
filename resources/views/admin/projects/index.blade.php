@@ -28,8 +28,9 @@
                             <td>{{ $project->slug}}</td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="" class="btn btn-sm btn-ptimary">
-                                        <i class="fas fa-eye"></i>
+                                    <a href="{{ route('admin.projects.show', ['project' => $project->id] ) }}" 
+                                    class="btn btn-sm btn-square btn-ptimary">
+                                        <i class="fas fa-eye"> qui</i>
                                     </a>
                                 </div>
                             </td>
