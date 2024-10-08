@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="d-flex align-items-center justify-content-between">
                     <h2>ELENCO PROGETTI AUTH </h2>
-                    <a href="" class="btn btn-sm btn-primary"> AGGIUNGI PROGETTO</a>
+                    <a href="{{ route('admin.projects.create') }}" class="btn btn-sm btn-primary"> AGGIUNGI PROGETTO</a>
                 </div>
             </div>
             <div class="col-12">
