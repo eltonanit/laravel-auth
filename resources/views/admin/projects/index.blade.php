@@ -4,7 +4,7 @@
        <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class="d-flex">
+                <div class="d-flex align-items-center justify-content-between">
                     <h2>ELENCO PROGETTI AUTH </h2>
                     <a href="" class="btn btn-sm btn-primary"> AGGIUNGI PROGETTO</a>
                 </div>
@@ -34,10 +34,11 @@
                                 </div>
                             </td>
                         </tr>
-                        @
+                        @endforeach
                     </tbody>
                 </table>
             </div>
         </div>
        </div>
+@endsection
              
