@@ -29,8 +29,13 @@
                             <td>
                                 <div class="d-flex">
                                     <a href="{{ route('admin.projects.show', ['project' => $project->id] ) }}" 
-                                    class="btn btn-sm btn-square btn-ptimary">
+                                    class="btn btn-sm  btn-ptimary me-2">
                                         <i class="fas fa-eye"> qui</i>
+                                    </a>
+
+                                        <a href="{{ route('admin.projects.edit', ['project' => $project->id] ) }}" 
+                                    class="btn btn-sm  btn-warning ">
+                                        <i class="fas fa-edit"> qui</i>
                                     </a>
                                 </div>
                             </td>

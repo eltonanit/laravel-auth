@@ -74,6 +74,8 @@ class ProjectController extends Controller
     {
         $form_data=$request->all();
 
+        $form_data['slug'] = generateSlug($form_data['name']);
+
         $project->update($form_data);
         
         return redirect()->route('admin.projects.index');

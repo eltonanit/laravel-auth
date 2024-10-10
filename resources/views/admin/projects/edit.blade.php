@@ -13,11 +13,12 @@
                     <div class="row">
                         <div class="col-12">
                             <label for="" class="control-label">Nome progetto:</label>
-                            <input type="text" name="name" id="" class="form-control form-control-sm" placeholder="Nome progetto">
+                            <input type="text" name="name" id="" class="form-control form-control-sm" 
+                            placeholder="Nome progetto" value="{{ old('name', $project->name)}}">
                         </div>
                         <div class="col-12">
                             <label for="" class="control-label">SUMMARY PROJECTS</label>
-                            <textarea name="summary" id="" cols="30" rows="10" class="form-control form-control-sm"></textarea>
+                            <textarea name="summary" id="" cols="30" rows="10" class="form-control form-control-sm" value="{{ old('summary', $project->summary)}}"></textarea>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-sm btn-success">Salva</button>
