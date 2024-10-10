@@ -37,7 +37,7 @@
                                     class="btn btn-sm  btn-warning ">
                                         <i class="fas fa-edit"> qui</i>
                                     </a>
-                                    <form action="{{  route('admin.projects.destroy' , ['project' => $project->id])}}" method="post">
+                                    <form action="{{  route('admin.projects.destroy' , ['project' => $project->id])}}" method="post" onsubmit="return confirm('Sei sicuro di voler eliminare questa auto?');">>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-sm btn-danger delete-progect ">
