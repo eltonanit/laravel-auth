@@ -37,6 +37,15 @@
                                     class="btn btn-sm  btn-warning ">
                                         <i class="fas fa-edit"> qui</i>
                                     </a>
+                                    <form action="{{  route('admin.projects.destroy' , ['project' => $project->id])}}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-sm btn-danger delete-progect ">
+                                             <i class="fas fa-trash"> X </i>
+                                        </button>
+                                    </form>
+
+                                    
                                 </div>
                             </td>
                         </tr>
