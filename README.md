@@ -13,3 +13,10 @@ Per la parte di back-office creiamo un resource controller Admin\\ProjectControl
 Fate le crud viste a lezione: index, show, create e store
 Bonus
 Implementiamo la validazione dei dati dei Progetti nelle operazioni CRUD che lo richiedono usando due form requests.
+
+
+REPO PARTE 2
+
+CRUD mancanti, ovvero edit, update e destroy. Per la destroy è richiesta obbligatoriamente la richiesta di conferma di cancellazione, scegliete voi come farla se con la confirm o con la modale di bootstrap.
+Bonus: realizzate la validazione dei campi anche per l'edit
+Buon lavoro
