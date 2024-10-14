@@ -20,3 +20,8 @@ REPO PARTE 2
 CRUD mancanti, ovvero edit, update e destroy. Per la destroy è richiesta obbligatoriamente la richiesta di conferma di cancellazione, scegliete voi come farla se con la confirm o con la modale di bootstrap.
 Bonus: realizzate la validazione dei campi anche per l'edit
 Buon lavoro
+
+PARTE 3 
+nome repo: laravel-auth
+Ciao ragazzi, continuiamo a lavorare nella repo dei giorni scorsi e aggiungiamo un’immagine ai nostri progetti.
+Ricordiamoci di creare il symlink con l’apposito comando artisan e di aggiungere l’attributo enctype="multipart/form-data" ai form di creazione e di modifica!
