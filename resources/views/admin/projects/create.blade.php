@@ -7,7 +7,7 @@
                 <h2>Add New Project</h2>              
             </div>
             <div class="col-12">
-                <form action="{{ route('admin.projects.store') }}" method="post">
+                <form action="{{ route('admin.projects.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-12">

@@ -38,7 +38,16 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $form_data = $request->validated();
+         $project = new Project();
+         if( $request->hasFile('image')){
+            $path = Storage::disk('public')->put('projects_image', $form_data['image']);
+            $form_data['image'] = $path;
+         }
+         $form_data['slug'] = Project::generateSlug($form_data['name'], '-');
+        $project->fill($form_data);
+        $project->save();
+        return redirect()->route('admin.projects.index');
     }
 
     /**
